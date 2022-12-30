@@ -1,0 +1,25 @@
+body,
+html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/078331500_1516793473-hands-1167612_1280.jpg");
+    min-height: 75%;
+}
+
+.menu {
+    display: none;
+}
+/* .w3-display-middle{
+  background:rgb(97, 66, 251);
+  opacity:0.4;
+  font-weight:bold;
+  }
+.w3-text-Black{
+  opacity: none;
+} */
