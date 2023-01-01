@@ -12,7 +12,11 @@
 
 <body>
     <div class="box">
-        <input id="text" type="text" value="/posts/{{ $post->slug }}" style="width:80%" /><br />
+        <h1 class="align-center" style="color: white;">{{ $post->title }}</h1>
+        <article class="my-3 fs-5" style="color: white;">
+            {!! $post->body !!}
+        </article>
+        <input id="text" type="text" value="/posts/{{ $post->slug }}" style="width:80%; display:none"><br />
         <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
     </div>
 

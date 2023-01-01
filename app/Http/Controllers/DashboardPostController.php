@@ -37,6 +37,11 @@ class DashboardPostController extends Controller
      */
     public function store(Request $request)
     {
+        $validatedData = $request->validate([
+            "title" => 'required|max:225',
+            "slug" => 'required',
+            "body" => 'required'
+        ]);
         $slugExists = Posts::where('slug', $request->slug)->exists();
         if ($slugExists) {
             // Jika slug sudah ada, tambahkan -angka pada akhir slug
